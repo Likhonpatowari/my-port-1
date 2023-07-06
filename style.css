@@ -1,0 +1,374 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header :start */
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background: url(img/banner-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: rgba(255,255,255,0.1);
+}
+.left-header
+{
+    line-height: 35px;
+}
+.left-header h5
+{
+    letter-spacing: 1px;
+}
+.left-header h4 
+{
+    font-weight: 600;
+    font-size: 25px;
+}
+.left-header h4 span
+{
+    color: rgb(119, 221, 187);
+}
+.left-header h2 span
+{
+    font-size: 30px;
+    font-weight: 600;
+     color: rgb(135, 105, 243);
+}
+
+.social-box ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+.social-box ul li 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,rgb(182,68,247), rgba(255,255,255,0.1),rgb(65,90,255));
+    cursor: pointer;
+    font-size: 20px;
+     color: rgb(119, 221, 187);
+     transition: 0.5s;
+}
+.social-box ul li:hover ,
+.container header button:hover 
+{
+    box-shadow: 0 0 10px cyan;
+}
+.container header button
+{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(45deg, rgb(65,90,255),rgb(182,68,247));
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container .imgbx
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+.container .imgbx span
+{
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    border-radius: 50%;
+}
+.container .imgbx span:nth-child(2){
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(128, 128, 128, 0.536);
+    border-radius: 50%;
+}
+.container .imgbx span:nth-child(2) li 
+{
+    position: absolute;
+    top: 50%;
+    transition: 0.5s;
+    transform: rotate(calc(360deg/13 * var(--i)));
+    transform-origin: 230px;
+    left: -20px;
+    font-size: 3rem;
+    color: var(--clr);
+    list-style: none;
+}
+.container .imgbx span:nth-child(2) li:nth-child(4),
+.container .imgbx span:nth-child(2) li:nth-child(5),
+.container .imgbx span:nth-child(2) li:nth-child(6),
+.container .imgbx span:nth-child(2) li:nth-child(7) ,
+.container .imgbx span:nth-child(2) li:nth-child(8) {
+    left: -40px;
+}
+.container .imgbx span:nth-child(2) li:nth-child(4)
+{
+   margin-top: 5px;
+}
+
+/* animations  */
+
+.container .imgbx span:nth-child(2) li:nth-child(4) a i
+{
+    animation: react 10s linear infinite;
+}
+@keyframes react 
+{
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.container .imgbx span:nth-child(2) li:nth-child(1) a i,
+.container .imgbx span:nth-child(2) li:nth-child(12) a i,
+.container .imgbx span:nth-child(2) li:nth-child(8) a i,
+.container .imgbx span:nth-child(2) li:nth-child(6) a i,
+.container .imgbx span:nth-child(2) li:nth-child(10) a i{
+    animation:postgresql  4s linear infinite;
+}
+@keyframes postgresql 
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    30%
+    {
+        transform: translateY(-5px);
+    }
+    70%
+    {
+        transform: translateY(5px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.container .imgbx span:nth-child(2) li:nth-child(2) a i
+{
+    animation: node 7s linear infinite;
+}
+@keyframes node 
+{
+    0%
+    {
+        transform: translateX(0px);
+    }
+    40%
+    {
+        transform: translateX(5px);
+    }
+    80%
+    {
+        transform: translateX(-5px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+.container .imgbx span:nth-child(2) li:nth-child(3) a i,
+.container .imgbx span:nth-child(2) li:nth-child(11) a i,
+.container .imgbx span:nth-child(2) li:nth-child(9) a i
+{
+    animation: typescript 6s linear infinite;
+}
+@keyframes  typescript 
+{
+    0%
+    {
+        transform: translateX(0px);
+    }
+    40%
+    {
+        transform: translateX(10px);
+    }
+    80%
+    {
+        transform: translateX(-10px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
+.container .imgbx span:nth-child(2) li:nth-child(5) a i,
+.container .imgbx span:nth-child(2) li:nth-child(7) a i,
+.container .imgbx span:nth-child(2) li:nth-child(13) a i
+{
+    animation: docker 7s linear infinite;
+}
+@keyframes  docker
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    40%
+    {
+        transform: translateY(-10px);
+    }
+    80%
+    {
+        transform: translateY(10px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+ .container .imgbx span:nth-child(2) li a
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(calc(360deg/-13 * var(--i)));
+    transition: 1s;
+    text-decoration: none;
+    color: var(--clr);
+}
+.container .imgbx img 
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+nav 
+{
+    position: absolute;
+    display: inline-block;
+    margin-left: 7%;
+    top: 50%;
+}
+
+nav ul 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: linear-gradient(45deg, rgb(65,90,255),rgb(182,68,247));
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid aqua;
+
+}
+nav ul li ,
+nav ul li a 
+{
+    list-style: none;
+    font-size: 20px;
+    color: rgb(10, 253, 160);
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+nav ul .home::before,
+nav ul .about::before,
+nav ul .project::before,
+nav ul .contact::before
+{
+    content: 'Home';
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 60px;
+    top: 0;
+    background: linear-gradient(45deg, rgb(65, 154, 255),rgb(125, 68, 247));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px;
+    z-index: 1;
+    border: 1px solid aqua;
+    border-left: none;
+    visibility: hidden;
+}
+nav ul .about::before
+{
+    content: 'About';
+     left: 60px;
+    top: 48px;
+}
+nav ul .project::before
+{
+    content: 'Project';
+    left: 60px;
+    top: 98px;
+}
+nav ul .contact::before
+{
+    content: 'Contact';
+     left: 60px;
+     top: 145px;
+
+}
+nav ul .home::after,
+nav ul .about::after,
+nav ul .project::after,
+nav ul .contact::after
+{
+    content: '';
+    position: absolute;
+    width: 15px ;
+    height: 15px;
+    background: linear-gradient(45deg, rgb(65, 154, 255),rgb(125, 68, 247));
+    right: -29px;
+    margin-top: 2px;
+    transform: rotate(-138deg);
+    border: 1px solid aqua;
+    visibility: hidden;
+}
+nav ul .home:hover:before,
+nav ul .about:hover:before,
+nav ul .project:hover:before,
+nav ul .contact:hover:before,
+nav ul .home:hover:after,
+nav ul .about:hover:after,
+nav ul .project:hover:after,
+nav ul .contact:hover:after
+{
+    visibility: visible;
+}
+
+
+/* header :End */
