@@ -311,7 +311,8 @@ nav ul li a
 nav ul .home1::before,
 nav ul .about1::before,
 nav ul .project1::before,
-nav ul .contact1::before
+nav ul .contact1::before,
+nav ul .team1::before
 {
     content: 'Home';
     position: absolute;
@@ -346,13 +347,19 @@ nav ul .contact1::before
 {
     content: 'Contact';
      left: 60px;
-     top: 145px;
-
+     top: 195px;
+}
+nav ul .team1::before
+{
+    content: 'Our Team';
+    left: 60px;
+    top: 145px;
 }
 nav ul .home1::after,
 nav ul .about1::after,
 nav ul .project1::after,
-nav ul .contact1::after
+nav ul .contact1::after,
+nav ul .team1::after
 {
     content: '';
     position: absolute;
@@ -369,10 +376,12 @@ nav ul .home1:hover:before,
 nav ul .about1:hover:before,
 nav ul .project1:hover:before,
 nav ul .contact1:hover:before,
+nav ul .team1:hover:before,
 nav ul .home1:hover:after,
 nav ul .about1:hover:after,
 nav ul .project1:hover:after,
-nav ul .contact1:hover:after
+nav ul .contact1:hover:after,
+nav ul .team1:hover:after
 {
     visibility: visible;
 }
@@ -477,10 +486,6 @@ nav ul .contact1:hover:after
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
     grid-gap: 2rem;
     /* padding:20px 40px; */
-}
-.service-content-bx h2
-{
-  /* line-height: 30px;   */
 }
 .service-content-bx
 {
