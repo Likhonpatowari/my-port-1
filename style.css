@@ -125,6 +125,8 @@ header
     justify-content: center;
     align-items: center;
     margin-top: 8%;
+    transition: 0.5s;
+    width: 100%;
 }
 .container .imgbx span
 {
@@ -836,4 +838,16 @@ button:focus
 {
     color: aliceblue;
     text-decoration: none;
+}
+
+/* letes responsive  */
+
+
+@media screen and (max-width:1161px)
+{
+    .container .imgbx
+    {
+        margin-top: 11%;
+        
+    } 
 }
