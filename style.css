@@ -365,7 +365,7 @@ nav ul .about1::before
 }
 nav ul .project1::before
 {
-    content: 'Project';
+    content: 'Service';
     left: 60px;
     top: 98px;
 }
